@@ -4,6 +4,16 @@ body {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
 }
+@media (min-width: 576px) {
+  /* body {
+      font-size: 30px;
+  } */
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 30px;
+  }
+}
 .banner {
   background-color: aqua;
   height: 100vh;
@@ -35,25 +45,27 @@ body {
   display: block;
   font-family: "fontello";
   position: absolute;
-  font-size: 22px;
   color: #fff;
   content: "\e800";
-  top: -17px;
+  /* top: -27px; */
+  top: -0.8em;
   left: 0;
   right: 0;
-  margin-left: 19px;
+  margin-left: 0.9em;
+  font-size: 0.9em;
 }
 .banner-text::after {
   display: block;
   font-family: "fontello";
   position: absolute;
-  font-size: 22px;
   color: #f0394d;
   content: "\e800";
-  top: -17px;
+  font-size: 0.9em;
+  /* top: -27px; */
+  top: -0.8em;
   left: 0;
   right: 0;
-  margin-right: 19px;
+  margin-right: 28px;
 }
 
 .date {
@@ -112,7 +124,8 @@ p {
 
 .dont-miss {
   padding: 140px 0 100px 0;
-  background-image: url("https://images.wallpaperscraft.com/image/hearts_red_love_126164_1600x1200.jpg");
+  /* background-image: url("https://images.wallpaperscraft.com/image/hearts_red_love_126164_1600x1200.jpg"); */
+  background-image: url("../images/thankyou.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -120,10 +133,9 @@ p {
 }
 
 .dont-miss .invite {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
-
-.dont-miss .over-lay {
+.over-lay {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,19 +151,23 @@ p {
   color: #ffffff;
 }
 .cont-down {
-  margin-right: 30px;
+  margin-right: 1em;
   display: inline-block;
+}
+.cont-down:last-child{
+    margin-right: 0em;
 }
 .count {
   background-color: #f0394d;
   color: #fff;
-  padding: 19px;
+  padding: 0.8em;
   border-radius: 50%;
-  height: 85px;
-  width: 85px;
-  font-size: 2em;
+  height: 3em;
+  width: 3em;
+  font-size: 1.5em;
   text-align: center;
   font-weight: bold;
+  margin: auto;
 }
 .cont-down .label {
   margin-top: 20px;
@@ -161,6 +177,15 @@ p {
 
 .thanks {
   padding: 140px 0 100px 0;
+  /* background-image: url("../images/thankyou.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.5em;
+  background-color: #232323;
 }
 
 .thanks .hand-font {
@@ -170,7 +195,32 @@ p {
   transform: rotate(-10deg);
   padding-right: 30px;
   margin-top: 40px;
-  margin-bottom: 25px;
-  line-height: 22px;
-  font-weight: bolder;
+  margin-bottom: 61px;
+  line-height: 0.5em;
+}
+.white-line {
+  width: 30px;
+  height: 8px;
+  display: inline-block;
+  border-top: solid 1px #fff;
+}
+.pink-heart {
+  color: #f0394d;
+  z-index: 3;
+  position: relative;
+}
+.white-heart {
+  z-index: 2;
+  margin-left: -0.8em;
+}
+.visible-lg {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block;
+  }
+  body {
+    font-size: 20px;
+  }
 }
