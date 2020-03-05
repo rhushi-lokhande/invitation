@@ -84,29 +84,29 @@ html {
 }
 .groom-bride .photo {
   position: relative;
-    overflow: hidden;
-    background-color: #FFF;
-    border: 18px solid #FFF;
-    vertical-align: middle;
+  overflow: hidden;
+  background-color: #fff;
+  border: 18px solid #fff;
+  vertical-align: middle;
 }
 
-.groom-bride .photo img{
-    border:solid 1px #ffffff;
-    width: 100%;
-    -webkit-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+.groom-bride .photo img {
+  border: solid 1px #ffffff;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-.groom-bride .photo img:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+.groom-bride .photo img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 p {
   font-family: "Arvo", serif;
@@ -148,8 +148,8 @@ p {
 .join-party .banner-text::before {
   color: #000;
 }
-.address p{
-    font-size: 1em;
+.address p {
+  font-size: 1em;
 }
 .dont-miss {
   padding: 180px 0 180px 0;
@@ -181,7 +181,7 @@ p {
   color: #ffffff;
 }
 .cont-down {
-  margin-right: 1em;
+  margin-right: 0.5em;
   display: inline-block;
 }
 .cont-down:last-child {
@@ -190,10 +190,10 @@ p {
 .count {
   background-color: #f0394d;
   color: #fff;
-  padding: 0.8em;
+  padding: 0.6em;
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  height: 2.7em;
+  width: 2.7em;
   font-size: 1.5em;
   text-align: center;
   font-weight: bold;
@@ -201,7 +201,7 @@ p {
 }
 .cont-down .label {
   margin-top: 20px;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   text-transform: uppercase;
 }
 
@@ -254,8 +254,8 @@ p {
     font-size: 20px;
   }
 }
-.names{
-    font-size: 0.8em;
-    margin-top: 1em;
-    letter-spacing: 2px;
+.names {
+  font-size: 0.8em;
+  margin-top: 1em;
+  letter-spacing: 2px;
 }
