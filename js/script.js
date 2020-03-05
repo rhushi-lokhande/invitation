@@ -26,13 +26,11 @@
             document.getElementsByClassName('hours')[0].innerHTML = t.hours;
             document.getElementsByClassName('minutes')[0].innerHTML = t.minutes;
             document.getElementsByClassName('seconds')[0].innerHTML = t.seconds;
-
-
-
             if (t.total <= 0) {
                 clearInterval(timeinterval);
             }
         }, 1000);
     }
-    initializeClock('03-25-2020 16:00:00')
-})()
+    initializeClock('03-25-2020 16:00:00');
+})();
+

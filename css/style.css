@@ -22,7 +22,7 @@ html {
   height: 100%;
   background-image: url("https://www.elsetge.cat/myimg/f/48-488483_free-wedding-background-free-hd-motion-graphics-download.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
 }
@@ -56,7 +56,7 @@ html {
   left: 0;
   right: 0;
   margin-left: 0.9em;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 .banner-text::after {
   display: block;
@@ -64,7 +64,7 @@ html {
   position: absolute;
   color: #f0394d;
   content: "\e800";
-  font-size: 0.9em;
+  font-size: 0.7em;
   /* top: -27px; */
   top: -0.8em;
   left: 0;
@@ -83,8 +83,30 @@ html {
   background-color: #f4f4f4;
 }
 .groom-bride .photo {
-  background-color: #ffffff;
-  padding: 15px;
+  position: relative;
+    overflow: hidden;
+    background-color: #FFF;
+    border: 18px solid #FFF;
+    vertical-align: middle;
+}
+
+.groom-bride .photo img{
+    border:solid 1px #ffffff;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.groom-bride .photo img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 p {
   font-family: "Arvo", serif;
@@ -126,13 +148,15 @@ p {
 .join-party .banner-text::before {
   color: #000;
 }
-
+.address p{
+    font-size: 1em;
+}
 .dont-miss {
-  padding: 140px 0 100px 0;
+  padding: 180px 0 180px 0;
   /* background-image: url("https://images.wallpaperscraft.com/image/hearts_red_love_126164_1600x1200.jpg"); */
   background-image: url("../images/thankyou.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   position: relative;
   background-position: center;
@@ -229,4 +253,9 @@ p {
   body {
     font-size: 20px;
   }
+}
+.names{
+    font-size: 0.8em;
+    margin-top: 1em;
+    letter-spacing: 2px;
 }
