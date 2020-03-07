@@ -30,9 +30,84 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font/css/fontello.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <style>
+        #loading {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 9999999;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes heart-zoom-reverse {
+
+            0%,
+            100% {
+                transform: scale(1.3);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(0.5);
+                opacity: 0.2;
+            }
+        }
+
+        @keyframes heart-zoom {
+
+            0%,
+            100% {
+                transform: scale(0.5);
+                opacity: 0.2;
+            }
+
+            50% {
+                transform: scale(1.3);
+                opacity: 1;
+            }
+        }
+
+        .heart-animation {
+            display: inline-block;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: -20px;
+            -webkit-animation: heart-zoom infinite 1.2s;
+            -moz-animation: heart-zoom infinite 1.2s;
+            -ms-animation: heart-zoom infinite 1.2s;
+            -o-animation: heart-zoom infinite 1.2s;
+            animation: heart-zoom infinite 1.2s;
+        }
+
+        .heart-animation-reverse {
+            display: inline-block;
+            margin: 0 auto;
+            padding-right: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            -webkit-animation: heart-zoom-reverse infinite 1.2s;
+            -moz-animation: heart-zoom-reverse infinite 1.2s;
+            -ms-animation: heart-zoom-reverse infinite 1.2s;
+            -o-animation: heart-zoom-reverse infinite 1.2s;
+            animation: heart-zoom-reverse infinite 1.2s;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="hideLoader()">
+    <div id="loading">
+        <div class="">
+            <i class="icon-heart pink-heart heart-animation"></i>
+            <i class="icon-heart white-heart heart-animation-reverse"></i>
+        </div>
+    </div>
     <section class="banner">
         <div class="over-lay"> </div>
         <div class="container-fluid h-100">
@@ -209,6 +284,13 @@
             mobile: true,       // default
             live: true        // default
         }).init();
+
+
+        function hideLoader() {
+            setTimeout(() => {
+                document.getElementById('loading').remove();
+            }, 2000);
+        }
     </script>
 </body>
 
