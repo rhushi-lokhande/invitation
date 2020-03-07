@@ -30,8 +30,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font/css/fontello.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <meta property="og:site_name" content="Rhushi Ragini Engagement Invitation"/>
-    <meta property="og:title" content="Two hearts very much in love are getting united and making a promise to be in love forever! Save the date as you're invited to our engagement"/>
+    <meta property="og:site_name" content="Rhushi Ragini Engagement Invitation" />
+    <meta property="og:title"
+        content="Two hearts very much in love are getting united and making a promise to be in love forever! Save the date as you're invited to our engagement" />
     <meta property="og:image" content="./card.jpg">
 
     <style>
@@ -281,17 +282,18 @@
 
     <script src="./js/script.js"></script>
     <script>
-        new WOW({
-            boxClass: 'wow',      // default
-            animateClass: 'animated', // default
-            offset: 0,          // default
-            mobile: true,       // default
-            live: true        // default
-        }).init();
+
 
 
         function hideLoader() {
             setTimeout(() => {
+                new WOW({
+                    boxClass: 'wow',      // default
+                    animateClass: 'animated', // default
+                    offset: 0,          // default
+                    mobile: true,       // default
+                    live: true        // default
+                }).init();
                 document.getElementById('loading').remove();
             }, 2000);
         }
