@@ -20,7 +20,7 @@ html {
 }
 .banner {
   height: 100%;
-  background-image: url("https://www.elsetge.cat/myimg/f/48-488483_free-wedding-background-free-hd-motion-graphics-download.jpg");
+  /* background-image: url("https://www.elsetge.cat/myimg/f/48-488483_free-wedding-background-free-hd-motion-graphics-download.jpg"); */
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
@@ -30,7 +30,7 @@ html {
   font-family: "Pacifico", cursive;
 }
 .fw {
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 .invite {
   font-size: 2em;
@@ -39,19 +39,18 @@ html {
   padding: 10px 40px;
   border-top: medium double #fff;
   border-bottom: medium double #fff;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 2.5em;
   margin-top: 35px;
   position: relative;
 }
-
+/* 
 .banner-text::before {
   display: block;
   font-family: "fontello";
   position: absolute;
   color: #fff;
   content: "\e800";
-  /* top: -27px; */
   top: -0.8em;
   left: 0;
   right: 0;
@@ -65,12 +64,11 @@ html {
   color: #f0394d;
   content: "\e800";
   font-size: 0.7em;
-  /* top: -27px; */
   top: -0.8em;
   left: 0;
   right: 0;
   margin-right: 28px;
-}
+} */
 
 .date {
   margin-top: 20px;
