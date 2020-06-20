@@ -1,4 +1,4 @@
-
+breakScroll = false;
 (function () {
     function getTimeRemaining(endtime) {
         var t = Date.parse(endtime) - Date.parse(new Date());
@@ -32,5 +32,25 @@
         }, 1000);
     }
     initializeClock('06/23/2020 16:00:00');
+    setTimeout(() => {
+        autoScroll();
+    }, 5000);
+
+    function autoScroll() {
+        var height = document.getElementById("container").scrollHeight - window.innerHeight;
+        var scrollHeight = 0;
+        var interval = setInterval(() => {
+            if (breakScroll || (scrollHeight > height)) {
+                clearInterval(interval)
+            } else {
+
+                scrollHeight = (window.lastScrollTop || 0) + 2;
+                // document.getElementById("container").scrollTop = scrollHeight;
+                window.scrollTo(0, scrollHeight)
+
+            }
+        }, 30)
+    }
+
 })();
 
