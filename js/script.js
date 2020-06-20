@@ -44,7 +44,7 @@ breakScroll = false;
                 clearInterval(interval)
             } else {
 
-                scrollHeight = (window.lastScrollTop || 0) + 2;
+                scrollHeight = (window.lastScrollTop || 0) + 4;
                 // document.getElementById("container").scrollTop = scrollHeight;
                 window.scrollTo(0, scrollHeight)
 
