@@ -134,7 +134,7 @@
     </div>
 
 
-    <section class="banner">
+    <section class="banner parallax">
         <div class="over-lay"> </div>
         <div class="container-fluid h-100">
             <div class="row h-100">
@@ -203,7 +203,7 @@
     </section>
 
     <section>
-        <div class="groom">
+        <div class="groom parallax">
 
         </div>
         <div class="text-2em text-center pt-3 pb-3 bg-gray">
@@ -252,7 +252,7 @@
 
     </section>
     <section>
-        <div class="bride">
+        <div class="bride parallax">
 
         </div>
         <div class="text-2em text-center pt-3 pb-3 bg-gray ">
@@ -325,7 +325,7 @@
             </div>
         </div>
     </section>
-    <section class="ring">
+    <section class="ring parallax">
 
     </section>
     <section class="join-party">
@@ -353,7 +353,7 @@
     </section>
 
 
-    <section class="dont-miss">
+    <section class="dont-miss parallax">
         <div class="over-lay"> </div>
         <div class="container-fluid h-100">
             <div class="row h-100">
@@ -395,7 +395,7 @@
     </section>
 
 
-    <section class="thanks">
+    <section class="thanks parallax">
         <div class="over-lay"> </div>
         <div class="container-fluid h-100">
             <div class="row h-100">
@@ -436,7 +436,10 @@
                 live: true        // default
             }).init();
             document.getElementById('loading').remove();
-            var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+            var lightbox = new SimpleLightbox('.gallery a', {
+                swipeClose: false,
+                docClose: false
+            });
 
             // }, 2000);
             setTimeout(() => {
@@ -454,6 +457,14 @@
                 breakScroll = true;
             }
             lastScrollTop = st <= 0 ? 0 : st;
+
+
+            // for (const parallax of document.querySelectorAll('.parallax')) {
+            //     parallax.style['background-position-y'] = (st * 0.2) + 'px';
+            // }
+            // var parallax = document.querySelectorAll('.parallax');
+
+            // parallax.style['background-position-y'] = (st * 0.2) + 'px';
         }
     </script>
 </body>
