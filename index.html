@@ -30,8 +30,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:description"
         content="Two hearts very much in love are getting united and making a promise to be in love forever! Save the date as you're invited to our marriage " />
-    <meta property="thumbnail" content="http://www.rhushiragini.in/images/card-min.jpg" />
-    <meta property="og:image" itemprop="image" content="http://www.rhushiragini.in/images/card-min.jpg" />
+    <meta property="thumbnail" content="http://www.rhushiragini.in/images/marriage_card-min.JPG" />
+    <meta property="og:image" itemprop="image" content="http://www.rhushiragini.in/images/marriage_card-min.JPG" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="http://www.rhushiragini.in/" />
@@ -434,6 +434,10 @@
             var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
 
             // }, 2000);
+            setTimeout(() => {
+                autoScroll();
+                console.log('start scrolling..')
+            }, 5000);
         }
         var lastScrollTop = 0;
         function updateScrollStatus(e) {

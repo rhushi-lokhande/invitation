@@ -32,10 +32,7 @@ breakScroll = false;
         }, 1000);
     }
     initializeClock('07/13/2020 11:00:00');
-    setTimeout(() => {
-        autoScroll();
-        console.log('start scrolling..')
-    }, 5000);
+    
 
     function autoScroll() {
         var height = document.getElementById("container").scrollHeight - window.innerHeight;
