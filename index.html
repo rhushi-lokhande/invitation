@@ -51,8 +51,12 @@
     <link rel="stylesheet" href="./dist/simple-lightbox.min.css">
 
     <style>
+        .noscroll {
+            overflow: hidden;
+        }
+
         #loading {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             top: 0;
             right: 0;
@@ -121,7 +125,7 @@
     </style>
 </head>
 
-<body onload="hideLoader()" id="container" onscroll="updateScrollStatus()">
+<body onload="hideLoader()" id="container" onscroll="updateScrollStatus()" class="noscroll">
     <div id="loading">
         <div class="">
             <i class="icon-heart pink-heart heart-animation"></i>
@@ -422,6 +426,7 @@
     <script src="./js/script.js"></script>
     <script>
         function hideLoader() {
+            document.getElementById("container").classList.remove("noscroll");
             // setTimeout(() => {
             new WOW({
                 boxClass: 'wow',      // default
