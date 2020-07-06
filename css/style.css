@@ -16,7 +16,7 @@ html {
 		margin-bottom: 40px;
 	}
 	body .thanks {
-		padding: 100px 0 100px 0;
+		padding: 150px 0 150px 0;
 	}
 }
 @media (min-width: 576px) {
@@ -33,10 +33,12 @@ html {
 	height: 100%;
 	/* background-image: url('https://www.elsetge.cat/myimg/f/48-488483_free-wedding-background-free-hd-motion-graphics-download.jpg'); */
 	background-image: url('../images/Raïna\ Manuel\ Paris\,\ _Love_\ The\ Primal\ Agent\ of\ Change_.jfif');
+	background-image: url('../images/8.jpeg');
 	background-repeat: no-repeat;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 .hand-font {
 	font-family: 'Pacifico', cursive;
@@ -44,16 +46,21 @@ html {
 .fw {
 	color: #ffffff;
 }
-.rf{
-  color: #f0394d;
+.rf {
+	color: #f0394d;
 }
 .invite {
-	font-size: 2em;
+	font-size: 3.5em;
+	line-height: 0.9em;
+	/* transform: rotate(-17deg); */
+}
+.invite small {
+	font-size: 70%;
 }
 .banner-text {
 	padding: 10px 40px;
-	border-top: medium double #fff;
-	border-bottom: medium double #fff;
+	border-top: thick double #fff;
+	border-bottom: thick double #fff;
 	color: #ffffff;
 	font-size: 2.5em;
 	margin-top: 35px;
@@ -89,7 +96,8 @@ html {
 	margin-top: 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 1.5em;
+	font-size: 3em;
+	transform: rotate(-17deg);
 }
 
 .groom-bride {
@@ -146,6 +154,8 @@ p {
 .ring {
 	height: 500px;
 	background-image: url('https://i.pinimg.com/originals/9c/46/2a/9c462af837df11988ad3a5d16db06c0b.jpg');
+	background-image: url('../images/2.jpeg');
+
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -164,19 +174,20 @@ p {
 }
 .address p {
 	font-size: 1.3em;
+	line-height: 1.3em;
 }
 .dont-miss {
 	padding: 180px 0 180px 0;
 	/* background-image: url("https://images.wallpaperscraft.com/image/hearts_red_love_126164_1600x1200.jpg"); */
-	background-image: url('../images/thankyou.jpg');
+	background-image: url('../images/count-donw.jpg');
 	background-repeat: no-repeat;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	background-position: center;
 }
 
-.dont-miss .invite {
+.dont-miss .dont-miss-text {
 	font-size: 2.5em;
 }
 .over-lay {
@@ -186,7 +197,7 @@ p {
 	right: 0;
 	bottom: 0;
 	/* background-color: #000; */
-	background-color: #0000004d;
+	background-color: #00000066;
 }
 .cont-down-container {
 	margin-top: 30px;
@@ -221,15 +232,19 @@ p {
 
 .thanks {
 	padding: 140px 0 100px 0;
-	/* background-image: url("../images/thankyou.jpg"); */
+	background-image: url('../images/1.jpeg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-size: cover;
+	/* background-position: center; */
 	position: relative;
 	color: #ffffff;
 	position: relative;
 	font-size: 1.5em;
 	background-color: #232323;
+}
+.thanks .over-lay {
+	background-color: #0000006e;
 }
 
 .thanks .hand-font {
@@ -269,7 +284,103 @@ p {
 	}
 }
 .names {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	margin-top: 1em;
 	letter-spacing: 2px;
+}
+.bride,
+.groom {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.groom {
+	background-image: url('../images/groom_side.jpg');
+}
+
+.bride {
+	background-image: url('../images/bride_side.jpeg');
+}
+.family {
+	padding: 0 0 50px 0px;
+	background-color: #f4f4f4;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+.family .member {
+	padding: 20px;
+	background-color: #fff;
+	border: solid 1px #d7d7d778;
+	max-width: 100%;
+	width: 300px;
+	margin: 0px auto 20px;
+}
+
+.member span {
+	font-size: 0.7em;
+	line-height: 0.5em;
+	/* margin: 0; */
+	/* padding: 0; */
+	display: inherit;
+	font-weight: 100;
+}
+.member h4 {
+	color: #f0394d;
+	font-family: 'Pacifico', cursive;
+}
+
+#gallery-container {
+	padding: 50px 0 0;
+}
+.bg-gray {
+	background-color: #f4f4f4;
+}
+.text-2em {
+	font-size: 2em;
+}
+.heading {
+	font-size: 2em;
+	margin-bottom: 50px;
+}
+.gallery a img {
+	max-width: 200px;
+	margin: 10px;
+}
+.gallery a {
+	border: solid 1px #f4f4f4;
+	margin: 0 10px;
+	background-color: #f4f4f4;
+}
+.gallery {
+	display: flex;
+	overflow-y: auto;
+	/* justify-content: center; */
+	align-items: center;
+	padding-bottom: 50px;
+}
+.sl-overlay {
+	background: #060606 !important;
+	opacity: 0.9 !important;
+}
+.sl-wrapper .sl-counter,
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-navigation button {
+	color: #fff !important;
+}
+::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #666;
 }

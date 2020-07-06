@@ -22,18 +22,19 @@ breakScroll = false;
         var timeinterval = setInterval(function () {
             var t = getTimeRemaining(endtime);
             // document.getElementsByClassName('weeks')[0].innerHTML = t.weeks;
-            document.getElementsByClassName('days')[0].innerHTML = t.days;
-            document.getElementsByClassName('hours')[0].innerHTML = t.hours;
-            document.getElementsByClassName('minutes')[0].innerHTML = t.minutes;
-            document.getElementsByClassName('seconds')[0].innerHTML = t.seconds;
+            document.getElementsByClassName('days')[0].innerHTML = t.days < 0 ? 0 : t.days;
+            document.getElementsByClassName('hours')[0].innerHTML = t.hours < 0 ? 0 : t.hours;
+            document.getElementsByClassName('minutes')[0].innerHTML = t.minutes < 0 ? 0 : t.minutes;
+            document.getElementsByClassName('seconds')[0].innerHTML = t.seconds < 0 ? 0 : t.seconds;
             if (t.total <= 0) {
                 clearInterval(timeinterval);
             }
         }, 1000);
     }
-    initializeClock('06/23/2020 16:00:00');
+    initializeClock('07/13/2020 11:00:00');
     setTimeout(() => {
         autoScroll();
+        console.log('start scrolling..')
     }, 5000);
 
     function autoScroll() {

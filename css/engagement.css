@@ -1,0 +1,275 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+@media (max-width: 576px) {
+	.banner .date {
+		margin-top: 40px;
+	}
+	.banner .invite {
+		margin-bottom: 40px;
+	}
+	body .thanks {
+		padding: 100px 0 100px 0;
+	}
+}
+@media (min-width: 576px) {
+	body {
+		font-size: 30px;
+	}
+}
+@media (min-width: 769px) {
+	body {
+		font-size: 30px;
+	}
+}
+.banner {
+	height: 100%;
+	/* background-image: url('https://www.elsetge.cat/myimg/f/48-488483_free-wedding-background-free-hd-motion-graphics-download.jpg'); */
+	background-image: url('../images/Raïna\ Manuel\ Paris\,\ _Love_\ The\ Primal\ Agent\ of\ Change_.jfif');
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+	background-position: center;
+}
+.hand-font {
+	font-family: 'Pacifico', cursive;
+}
+.fw {
+	color: #ffffff;
+}
+.rf{
+  color: #f0394d;
+}
+.invite {
+	font-size: 2em;
+}
+.banner-text {
+	padding: 10px 40px;
+	border-top: medium double #fff;
+	border-bottom: medium double #fff;
+	color: #ffffff;
+	font-size: 2.5em;
+	margin-top: 35px;
+	position: relative;
+}
+
+.banner-text::before {
+	display: block;
+	font-family: 'fontello';
+	position: absolute;
+	color: #fff;
+	content: '\e800';
+	top: -0.8em;
+	left: 0;
+	right: 0;
+	margin-left: 0.9em;
+	font-size: 0.7em;
+}
+.banner-text::after {
+	display: block;
+	font-family: 'fontello';
+	position: absolute;
+	color: #f0394d;
+	content: '\e800';
+	font-size: 0.7em;
+	top: -0.8em;
+	left: 0;
+	right: 0;
+	margin-right: 28px;
+}
+
+.date {
+	margin-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 1.5em;
+}
+
+.groom-bride {
+	padding: 140px 0 100px 0;
+	background-color: #f4f4f4;
+}
+.groom-bride .photo {
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	border: 18px solid #fff;
+	vertical-align: middle;
+}
+
+.groom-bride .photo img {
+	border: solid 1px #ffffff;
+	width: 100%;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.groom-bride .photo img:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+p {
+	font-family: 'Arvo', serif;
+	font-size: 15px;
+	line-height: 26px;
+	margin-bottom: 25px;
+}
+.hart {
+	position: absolute;
+	/* margin: 10% 3%; */
+	top: 23px;
+	left: calc(100% - 11px);
+	background-color: red;
+	color: #ffffff;
+	border-radius: 52%;
+	height: 55px;
+	width: 55px;
+	font-size: 26px;
+	padding: 9px 0;
+	text-align: center;
+}
+
+.ring {
+	height: 500px;
+	background-image: url('https://i.pinimg.com/originals/9c/46/2a/9c462af837df11988ad3a5d16db06c0b.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.join-party {
+	padding: 100px 0 100px 0;
+	color: #000000;
+}
+.join-party .banner-text {
+	color: #000000;
+	border-color: #000000;
+}
+.join-party .banner-text::before {
+	color: #000;
+}
+.address p {
+	font-size: 1.3em;
+}
+.dont-miss {
+	padding: 180px 0 180px 0;
+	/* background-image: url("https://images.wallpaperscraft.com/image/hearts_red_love_126164_1600x1200.jpg"); */
+	background-image: url('../images/thankyou.jpg');
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+
+.dont-miss .invite {
+	font-size: 2.5em;
+}
+.over-lay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* background-color: #000; */
+	background-color: #0000004d;
+}
+.cont-down-container {
+	margin-top: 30px;
+	display: block;
+	flex: none;
+	color: #ffffff;
+}
+.cont-down {
+	margin-right: 0.5em;
+	display: inline-block;
+}
+.cont-down:last-child {
+	margin-right: 0em;
+}
+.count {
+	background-color: #f0394d;
+	color: #fff;
+	padding: 0.6em;
+	border-radius: 50%;
+	height: 2.7em;
+	width: 2.7em;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+	margin: auto;
+}
+.cont-down .label {
+	margin-top: 20px;
+	/* letter-spacing: 3px; */
+	text-transform: uppercase;
+}
+
+.thanks {
+	padding: 140px 0 100px 0;
+	/* background-image: url("../images/thankyou.jpg"); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	color: #ffffff;
+	position: relative;
+	font-size: 1.5em;
+	background-color: #232323;
+}
+
+.thanks .hand-font {
+	font-size: 2em;
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+	padding-right: 30px;
+	margin-top: 40px;
+	margin-bottom: 61px;
+	line-height: 0.5em;
+}
+.white-line {
+	width: 30px;
+	height: 8px;
+	display: inline-block;
+	border-top: solid 1px #fff;
+}
+.pink-heart {
+	color: #f0394d;
+	z-index: 3;
+	position: relative;
+}
+.white-heart {
+	z-index: 2;
+	margin-left: -0.8em;
+}
+.visible-lg {
+	display: none;
+}
+@media (min-width: 1200px) {
+	.visible-lg {
+		display: block;
+	}
+	body {
+		font-size: 20px;
+	}
+}
+.names {
+	font-size: 0.8em;
+	margin-top: 1em;
+	letter-spacing: 2px;
+}
