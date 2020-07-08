@@ -31,9 +31,7 @@ html {
 }
 .banner {
 	height: 100%;
-	/* background-image: url('https://www.elsetge.cat/myimg/f/48-488483_free-wedding-background-free-hd-motion-graphics-download.jpg'); */
-	background-image: url('../images/Raïna\ Manuel\ Paris\,\ _Love_\ The\ Primal\ Agent\ of\ Change_.jfif');
-	background-image: url('../images/8.jpeg');
+	background: url('../images/8.jpeg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -153,8 +151,7 @@ p {
 
 .ring {
 	height: 500px;
-	background-image: url('https://i.pinimg.com/originals/9c/46/2a/9c462af837df11988ad3a5d16db06c0b.jpg');
-	background-image: url('../images/2.jpeg');
+	background: url('../images/2.jpeg');
 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -179,7 +176,7 @@ p {
 .dont-miss {
 	padding: 180px 0 180px 0;
 	/* background-image: url("https://images.wallpaperscraft.com/image/hearts_red_love_126164_1600x1200.jpg"); */
-	background-image: url('../images/count-donw.jpg');
+	background: url('../images/count-donw.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -232,7 +229,7 @@ p {
 
 .thanks {
 	padding: 140px 0 100px 0;
-	background-image: url('../images/1.jpeg');
+	background: url('../images/1.jpeg');
 	background-repeat: no-repeat;
 	/* background-attachment: fixed; */
 	background-size: cover;
