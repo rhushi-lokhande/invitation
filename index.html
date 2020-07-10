@@ -139,7 +139,7 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col-12  d-flex justify-content-center  align-items-center">
-                    <div class="text-center">
+                    <div class="text-center my-5">
                         <div class="hand-font fw invite wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
                             Save
                             The Date
@@ -468,6 +468,21 @@
             // var parallax = document.querySelectorAll('.parallax');
 
             // parallax.style['background-position-y'] = (st * 0.2) + 'px';
+        }
+        function autoScroll() {
+            var height = document.getElementById("container").scrollHeight - window.innerHeight;
+            var scrollHeight = 0;
+            var interval = setInterval(() => {
+                if (breakScroll || (scrollHeight > height)) {
+                    clearInterval(interval)
+                } else {
+
+                    scrollHeight = (window.lastScrollTop || 0) + 4;
+                    // document.getElementById("container").scrollTop = scrollHeight;
+                    window.scrollTo(0, scrollHeight)
+
+                }
+            }, 30)
         }
     </script>
 </body>
